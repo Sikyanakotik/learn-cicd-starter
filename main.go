@@ -25,8 +25,7 @@ type apiConfig struct {
 var staticFiles embed.FS
 
 func main() {
-	// TEMP: Break the code to test CI/CD pipeline. Remove this after confirming pipeline works.
-	nonsense = "This line is intentionally broken to test CI/CD pipeline. Remove this line after confirming pipeline works."
+	// nonsense = "This line is intentionally broken to test CI/CD pipeline. Remove this line after confirming pipeline works."
 
 	err := godotenv.Load(".env")
 	if err != nil {
