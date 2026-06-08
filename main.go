@@ -25,6 +25,8 @@ type apiConfig struct {
 var staticFiles embed.FS
 
 func main() {
+	// nonsense = "This line is intentionally broken to test CI/CD pipeline. Remove this line after confirming pipeline works."
+
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Printf("warning: assuming default configuration. .env unreadable: %v", err)
